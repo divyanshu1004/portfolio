@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Divyanshu Rawat - Portfolio Website
 
 A modern, responsive portfolio website built with Next.js, TypeScript, and Framer Motion, showcasing my work as a Full Stack Developer with expertise in AI, blockchain, and web technologies.
@@ -170,22 +171,47 @@ Built with ❤️ and ☕ by [Divyanshu Rawat](https://github.com/divyanshu1004)
 _"Code is poetry written in logic"_
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+=======
+# Divyasnshu Rawat - Portfolio
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Welcome to my personal portfolio! 🚀  
+This website showcases my work, skills, and projects as a software developer. Built using [Next.js](https://nextjs.org), it is designed to be fast, modern, and mobile-friendly.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌟 Features
 
-## Learn More
+- Interactive homepage
+- Projects gallery with descriptions and links
+- About section detailing my skills and experience
+- Contact form for collaboration or queries
+- Responsive design for all devices
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠 Technologies Used
+>>>>>>> 909563c9b9f1dee576409a9f42435e65619a8ea9
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js & React
+- TypeScript
+- Tailwind CSS / Styled Components *(edit if needed)*
+- Vercel (Deployment)
+- [Other libraries or tools, if applicable]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `app/` - Main application pages
+- `components/` - Reusable UI components
+- `public/` - Static assets (images, fonts, etc.)
+- `styles/` - Global styles
+
+## 📬 Contact
+
+Questions, feedback, or collaboration offers?  
+Reach out via [LinkedIn](www.linkedin.com/in/divyanshu-rawat-a2a327256) or email: `vedi05962@gmail.com`
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Thank you for visiting my portfolio!
