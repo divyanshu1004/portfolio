@@ -1,4 +1,4 @@
-# Divyasnshu RaWAT - Portfolio
+# Divyasnshu Rawat - Portfolio
 
 Welcome to my personal portfolio! 🚀  
 This website showcases my work, skills, and projects as a software developer. Built using [Next.js](https://nextjs.org), it is designed to be fast, modern, and mobile-friendly.
@@ -31,7 +31,7 @@ This website showcases my work, skills, and projects as a software developer. Bu
 ## 📬 Contact
 
 Questions, feedback, or collaboration offers?  
-Reach out via [LinkedIn](https://www.linkedin.com/in/divyanshu-gupta/) or email: `your-email@example.com` *(update with your actual email)*
+Reach out via [LinkedIn](www.linkedin.com/in/divyanshu-rawat-a2a327256) or email: `vedi05962@gmail.com`
 
 ## 📝 License
 
