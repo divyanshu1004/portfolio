@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Divyanshu Rawat - Portfolio Website
 
 A modern, responsive portfolio website built with Next.js, TypeScript, and Framer Motion, showcasing my work as a Full Stack Developer with expertise in AI, blockchain, and web technologies.
