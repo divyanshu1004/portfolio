@@ -1,21 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  /* Custom theme properties */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-primary: #ffffff;
+  --color-secondary: #888888;
+  --color-accent: #666666;
+  --color-muted: #333333;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ffffff;
   }
 }
 
@@ -23,4 +25,144 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+}
+
+/* Modern Typography */
+.text-display {
+  font-size: clamp(3rem, 8vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text-heading {
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text-subheading {
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+
+.text-body-large {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.text-muted {
+  color: var(--color-secondary);
+}
+
+/* Custom styles for portfolio */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
+.bg-gradient-conic {
+  background: conic-gradient(var(--tw-gradient-stops));
+}
+
+/* Custom animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s linear infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom blur utilities */
+.blur-xs {
+  filter: blur(2px);
+}
+.blur-sm {
+  filter: blur(4px);
+}
+.blur-md {
+  filter: blur(8px);
+}
+.blur-lg {
+  filter: blur(16px);
+}
+.blur-xl {
+  filter: blur(24px);
+}
+.blur-2xl {
+  filter: blur(40px);
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Text gradient utilities */
+.text-gradient {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
