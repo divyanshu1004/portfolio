@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Divyasnshu RaWAT - Portfolio
 
-## Getting Started
+Welcome to my personal portfolio! 🚀  
+This website showcases my work, skills, and projects as a software developer. Built using [Next.js](https://nextjs.org), it is designed to be fast, modern, and mobile-friendly.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Interactive homepage
+- Projects gallery with descriptions and links
+- About section detailing my skills and experience
+- Contact form for collaboration or queries
+- Responsive design for all devices
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js & React
+- TypeScript
+- Tailwind CSS / Styled Components *(edit if needed)*
+- Vercel (Deployment)
+- [Other libraries or tools, if applicable]
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app/` - Main application pages
+- `components/` - Reusable UI components
+- `public/` - Static assets (images, fonts, etc.)
+- `styles/` - Global styles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📬 Contact
 
-## Deploy on Vercel
+Questions, feedback, or collaboration offers?  
+Reach out via [LinkedIn](https://www.linkedin.com/in/divyanshu-gupta/) or email: `your-email@example.com` *(update with your actual email)*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Thank you for visiting my portfolio!
