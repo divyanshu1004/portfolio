@@ -123,7 +123,7 @@ export default function About() {
             { number: "20+", label: "PROJECTS COMPLETED" },
             { number: "2+", label: "YEARS OF EXPERIENCE" },
             { number: "10+", label: "TECHNOLOGIES MASTERED" },
-          ].map((stat, _index) => (
+          ].map((stat) => (
             <motion.div
               key={stat.label}
               className="text-center group"
