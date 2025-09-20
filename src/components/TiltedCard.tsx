@@ -44,6 +44,17 @@ const TiltedCard: React.FC<TiltedCardProps> = ({
     [-tiltIntensity, tiltIntensity]
   );
 
+  // Always create these transforms even if not used
+  const glowOpacity = useTransform(mouseXSpring, [-0.5, 0, 0.5], [0, 0.5, 0]);
+  const glowBoxShadow = useTransform(
+    [mouseXSpring, mouseYSpring],
+    (latest: number[]) => {
+      const [x, y] = latest;
+      const intensity = Math.sqrt(x * x + y * y);
+      return `0 0 ${intensity * 20}px rgba(99, 102, 241, ${intensity * 0.3})`;
+    }
+  );
+
   // Handle mouse movement
   const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
     if (!ref.current) return;
@@ -91,7 +102,7 @@ const TiltedCard: React.FC<TiltedCardProps> = ({
             className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 blur-xl"
             style={{
               transform: "translateZ(-1px)",
-              opacity: useTransform(mouseXSpring, [-0.5, 0, 0.5], [0, 0.5, 0]),
+              opacity: glowOpacity,
             }}
           />
         )}
@@ -130,16 +141,7 @@ const TiltedCard: React.FC<TiltedCardProps> = ({
           <motion.div
             className="absolute inset-0 rounded-xl border border-white/20 pointer-events-none"
             style={{
-              boxShadow: useTransform(
-                [mouseXSpring, mouseYSpring],
-                (latest: number[]) => {
-                  const [x, y] = latest;
-                  const intensity = Math.sqrt(x * x + y * y);
-                  return `0 0 ${intensity * 20}px rgba(99, 102, 241, ${
-                    intensity * 0.3
-                  })`;
-                }
-              ),
+              boxShadow: glowBoxShadow,
             }}
           />
         )}

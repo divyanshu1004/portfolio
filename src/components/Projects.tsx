@@ -59,7 +59,7 @@ export default function Projects() {
           className="mb-24"
         >
           <h2 className="text-display text-white mb-8">
-            HERE'S SOME OF MY PROJECTS
+            HERE&apos;S SOME OF MY PROJECTS
           </h2>
         </motion.div>
 

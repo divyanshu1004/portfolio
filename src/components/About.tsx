@@ -54,8 +54,8 @@ export default function About() {
             transition={{ duration: 0.3 }}
           >
             <p className="text-body-large text-gray-300 leading-relaxed">
-              I'M A DIGITAL DEVELOPER BASED IN INDIA, FOCUSED ON WEB EXPERIENCE
-              & MODERN TECHNOLOGIES.
+              I&apos;M A DIGITAL DEVELOPER BASED IN INDIA, FOCUSED ON WEB
+              EXPERIENCE & MODERN TECHNOLOGIES.
             </p>
             <p className="text-body-large text-gray-300 leading-relaxed">
               PASSIONATE ABOUT BUILDING INNOVATIVE SOLUTIONS WITH MODERN
@@ -78,16 +78,16 @@ export default function About() {
             whileHover={{ x: 10 }}
             transition={{ duration: 0.3 }}
           >
-            WHAT I'VE BEEN CRAFTING ALONG THE WAY
+            WHAT I&apos;VE BEEN CRAFTING ALONG THE WAY
           </motion.h3>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {skills.map((skill, index) => (
+            {skills.map((skill, _index) => (
               <motion.div
                 key={skill.name}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.6, delay: _index * 0.1 }}
                 viewport={{ once: true }}
                 className="group"
               >
@@ -123,7 +123,7 @@ export default function About() {
             { number: "20+", label: "PROJECTS COMPLETED" },
             { number: "2+", label: "YEARS OF EXPERIENCE" },
             { number: "10+", label: "TECHNOLOGIES MASTERED" },
-          ].map((stat, index) => (
+          ].map((stat, _index) => (
             <motion.div
               key={stat.label}
               className="text-center group"

@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
-  const [scrollY, setScrollY] = useState(0);
   const [currentText, setCurrentText] = useState(0);
 
   const rotatingTexts = [
@@ -16,17 +15,11 @@ export default function Hero() {
   ];
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
     const interval = setInterval(() => {
       setCurrentText((prev) => (prev + 1) % rotatingTexts.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [rotatingTexts.length]);
 
   return (
     <section className="min-h-screen flex flex-col justify-center relative overflow-hidden bg-black">
@@ -66,7 +59,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mb-12 h-16 flex items-center"
           >
-            <span className="text-gray-400 text-lg mr-4">I'M A</span>
+            <span className="text-gray-400 text-lg mr-4">I&apos;M A</span>
             <div className="overflow-hidden">
               <motion.span
                 key={currentText}

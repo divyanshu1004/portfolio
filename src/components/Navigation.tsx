@@ -1,22 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import GradualBlur from "./GradualBlur";
 
 export default function Navigation() {
-  const [scrolled, setScrolled] = useState(false);
-  const { scrollY } = useScroll();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <>
       <GradualBlur
