@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Code, Database, Globe, Smartphone, Server, Zap } from "lucide-react";
+import Beams from "./Beams";
 
 export default function About() {
   const skills = [
@@ -16,14 +17,29 @@ export default function About() {
       icon: Database,
       description: "MONGODB, POSTGRESQL, MYSQL",
     },
-    { name: "MOBILE", icon: Smartphone, description: "REACT NATIVE, FLUTTER" },
+    { name: "MOBILE", icon: Smartphone, description: "REACT NATIVE" },
     { name: "BLOCKCHAIN", icon: Code, description: "SOLIDITY, WEB3, ETHEREUM" },
     { name: "AI/ML", icon: Zap, description: "TENSORFLOW, PYTORCH, NLP" },
   ];
 
   return (
-    <section id="about" className="min-h-screen bg-black py-24">
-      <div className="container mx-auto px-6 lg:px-12">
+    <section id="about" className="min-h-screen relative bg-black py-24">
+      {/* Beams Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <Beams
+          beamWidth={1}
+          beamHeight={15}
+          beamNumber={12}
+          lightColor="#ffffff"
+          speed={2}
+          noiseIntensity={1.2}
+          scale={0.4}
+          rotation={35}
+        />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-6 lg:px-12">
         {/* About Intro */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -120,9 +136,9 @@ export default function About() {
           className="grid md:grid-cols-3 gap-12"
         >
           {[
-            { number: "20+", label: "PROJECTS COMPLETED" },
+            { number: "10+", label: "PROJECTS COMPLETED" },
             { number: "2+", label: "YEARS OF EXPERIENCE" },
-            { number: "10+", label: "TECHNOLOGIES MASTERED" },
+            { number: "5+", label: "TECHNOLOGIES MASTERED" },
           ].map((stat) => (
             <motion.div
               key={stat.label}

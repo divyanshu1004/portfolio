@@ -6,6 +6,7 @@ import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   const [currentText, setCurrentText] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const rotatingTexts = [
     "FULL-STACK DEVELOPER",
@@ -21,8 +22,17 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, [rotatingTexts.length]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className="min-h-screen flex flex-col justify-center relative overflow-hidden bg-black">
+    <section className="min-h-screen flex flex-col justify-start pt-24 relative overflow-hidden bg-black">
       {/* Background Grid */}
       <div className="absolute inset-0 opacity-10">
         <div
@@ -144,26 +154,19 @@ export default function Hero() {
         {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
+          animate={{ opacity: isScrolled ? 0 : 1 }}
+          transition={{ duration: 0.3 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="flex flex-col items-center gap-2"
+            className="flex flex-col items-center"
           >
-            <span className="text-gray-400 text-xs tracking-wider uppercase">
-              Scroll
-            </span>
-            <ArrowDown className="w-4 h-4 text-gray-400" />
+            <ArrowDown className="w-5 h-5 text-gray-400" />
           </motion.div>
         </motion.div>
       </div>
-
-      {/* Background elements */}
-      <div className="absolute top-1/4 right-12 w-2 h-32 bg-white opacity-20" />
-      <div className="absolute bottom-1/4 left-12 w-2 h-24 bg-white opacity-10" />
     </section>
   );
 }

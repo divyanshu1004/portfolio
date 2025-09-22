@@ -1,40 +1,36 @@
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-# Divyanshu Rawat - Portfolio Website
+## Getting Started
 
-A modern, responsive portfolio website built with Next.js, TypeScript, and Framer Motion, showcasing my work as a Full Stack Developer with expertise in AI, blockchain, and web technologies.
+First, run the development server:
 
-## 🌟 Features
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- **Modern Design**: Clean, professional design with smooth animations and transitions
-- **Responsive**: Fully responsive design that works perfectly on all devices
-- **Interactive**: Engaging animations powered by Framer Motion
-- **Performance Optimized**: Built with Next.js for optimal performance and SEO
-- **Type Safe**: Fully typed with TypeScript for better development experience
-- **Accessibility**: Follows accessibility best practices
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 📧 Contact
+## Learn More
 
-- **Email**: [vedi05962@gmail.com](mailto:vedi05962@gmail.com)
-- **LinkedIn**: [divyanshu-rawat](https://linkedin.com/in/divyanshu-rawat)
-- **GitHub**: [divyanshu1004](https://github.com/divyanshu1004)
-- **Twitter**: [@divyanshu_dev](https://twitter.com/divyanshu_dev)
+To learn more about Next.js, take a look at the following resources:
 
-## 📄 License
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-This project is open source and available under the [MIT License](LICENSE).
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## 🙏 Acknowledgments
+## Deploy on Vercel
 
-- **Next.js Team**: For the amazing React framework
-- **Framer Motion**: For smooth animations and transitions
-- **Tailwind CSS**: For utility-first CSS framework
-- **Lucide**: For beautiful, consistent icons
-- **Vercel**: For seamless deployment and hosting
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
----
-
-Built with ❤️ and ☕ by [Divyanshu Rawat](https://github.com/divyanshu1004)
-
-_"Code is poetry written in logic"_
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

@@ -1,22 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import GradualBlur from "./GradualBlur";
 
 export default function Navigation() {
   return (
     <>
-      <GradualBlur
-        target="page"
-        position="top"
-        height="6rem"
-        strength={3}
-        divCount={15}
-        curve="bezier"
-        exponential={true}
-        opacity={1}
-      />
-
       {/* Fixed navigation overlay */}
       <motion.nav
         initial={{ opacity: 0, y: -20 }}
@@ -32,7 +20,7 @@ export default function Navigation() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           {/* Strong glassmorphism background */}
-          <div className="absolute inset-0 rounded-full backdrop-blur-50xl bg-black/0 shadow-2xl" />
+          <div className="absolute inset-0 rounded-full backdrop-blur-50xl bg-black/0 " />
 
           {/* Navigation Links */}
           <div className="relative flex items-center gap-6 px-8 py-4">
